@@ -34,6 +34,10 @@ app.post('/echo', function(req, res) {
     });
 });
 
+app.get('/hello', function (req, res) {
+    res.send("Hello to you too!");
+});
+
 
 // error handler
 app.use(function(err, req, res, next) {
